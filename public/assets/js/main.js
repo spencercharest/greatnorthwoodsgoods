@@ -10,7 +10,6 @@
 	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body'),
 			$main = $('#main');
@@ -22,6 +21,11 @@
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
+
+				if (typeof noAdblocker === "undefined") {
+					$('.listings-text').text('Oops, it looks like you may be running an ad blocker. Please turn off your ad blocker to view this content.')
+					$('.feedback-text').text('Oops, it looks like you may be running an ad blocker. Please turn off your ad blocker to view this content.')
+				}
 			});
 
 		// Fix: Placeholder polyfill.
