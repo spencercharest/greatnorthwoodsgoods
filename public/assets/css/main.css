@@ -3795,13 +3795,13 @@
 
 #an-item-wrap {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 
 .an-item {
-	min-width: 50%;
+  min-width: 50%;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	color: #636363;
 }
