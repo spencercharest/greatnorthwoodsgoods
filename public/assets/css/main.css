@@ -3841,3 +3841,27 @@ table.an-ft, table.an-fr, table.an-fb {
 	line-height: 115px !important;
 	text-shadow: rgb(179, 179, 179) 0px 0px 0px, rgb(186, 186, 186) 1px 1px 0px, rgb(194, 194, 194) 2px 2px 0px, rgb(201, 201, 201) 3px 3px 0px, rgb(209, 209, 209) 4px 4px 0px, rgb(217, 217, 217) 5px 5px 0px, rgb(224, 224, 224) 6px 6px 0px, rgb(232, 232, 232) 7px 7px 0px, rgb(240, 240, 240) 8px 8px 0px, rgb(247, 247, 247) 9px 9px 0px;
 }
+
+/* Pace Progress */
+
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none
+}
+
+.pace-inactive{
+	display: none
+}
+
+.pace .pace-progress { 
+	background: #fff;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 2px;
+}
